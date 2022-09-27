@@ -3,6 +3,7 @@ package com.dailycodebuffer.springboottutorial.service;
 import com.dailycodebuffer.springboottutorial.entity.Department;
 import com.dailycodebuffer.springboottutorial.error.DepartmentNotFoundException;
 import com.dailycodebuffer.springboottutorial.repository.DepartmentRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +12,7 @@ import java.util.Objects;
 import java.util.Optional;
 
 @Service
+@AllArgsConstructor
 public class DepartmentServiceImpl implements DepartmentService {
 
     @Autowired
