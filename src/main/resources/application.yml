@@ -1,35 +1,35 @@
-
-spring:
-  profiles:
-    active: qa
-
----
-
-spring:
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    username: root
-    url: jdbc:mysql://localhost:3306/dcbapp
-    password: '12345678'
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: 'true'
-  config:
-    activate:
-      on-profile: dev
-
----
-spring:
-  datasource:
-    driver-class-name: org.h2.Driver
-    username: sa
-    url: jdbc:h2:mem:dcbapp-qa
-    password: sa
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: 'true'
-  config:
-    activate:
-      on-profile: qa
+#
+#spring:
+#  profiles:
+#    active: qa
+#
+#---
+#
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    username: root
+#    url: jdbc:mysql://localhost:3306/dcbapp
+#    password: '12345678'
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: 'true'
+#  config:
+#    activate:
+#      on-profile: dev
+#
+#---
+#spring:
+#  datasource:
+#    driver-class-name: org.h2.Driver
+#    username: sa
+#    url: jdbc:h2:mem:dcbapp-qa
+#    password: sa
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: 'true'
+#  config:
+#    activate:
+#      on-profile: qa
