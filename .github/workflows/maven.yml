@@ -30,6 +30,6 @@ jobs:
       with:
         image: kan19/crud-department
         registry: docker.io
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        username: '${{ secrets.DOCKER_USERNAME }}'
+        password: '${{ secrets.DOCKER_PASSWORD }}'
   
