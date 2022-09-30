@@ -55,6 +55,7 @@ jobs:
       with:
         remote_docker_host: root@103.142.137.207
         ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY  }}
+        ssh_public_key: ${{ secrets.SSH_PUBLIC_KEY }}
         deployment_mode: docker-compose
         args: up -d
         docker_prune: 'false'
