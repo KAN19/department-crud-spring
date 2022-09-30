@@ -47,8 +47,8 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
-#    - name: Pull latest build
-#      run: echo hello
+    - name: Pull latest build
+      run: docker pull kan19/crud-department
 
 
   
