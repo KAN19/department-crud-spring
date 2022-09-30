@@ -1,0 +1,8 @@
+version: '2'
+services:
+  app:
+    container_name: crud-department
+    image: kan19/crud-department:latest
+    ports:
+      - 8088:8080
+
