@@ -53,7 +53,7 @@ jobs:
         stack_file_name: docker-compose.yml
         args: up -d
         docker_prune: 'false'
-        pull_images_first: 'false'
+        pull_images_first: 'true'
 
 
   
