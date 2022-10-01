@@ -8,6 +8,6 @@ public class Controller {
 
     @RequestMapping(path = "/")
     public String helloSpring() {
-        return "Hello chao mung anh em den voi channel cua Kshark";
+        return "Hello chao mung anh em den Lop cua Thuy";
     }
 }
