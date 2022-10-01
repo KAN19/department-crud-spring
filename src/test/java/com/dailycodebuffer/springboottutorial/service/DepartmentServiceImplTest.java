@@ -62,7 +62,7 @@ class DepartmentServiceImplTest {
         //when
         underTest.fetchDepartmentList();
         //then
-        verify(departmentRepository).findAll();
+        verify(departmentRepository).deleteAll();
     }
 
     @Test
